@@ -1,5 +1,5 @@
 import React from 'react';
-import { apiFetch } from '../api';
+
 
 const About = () => {
   const containerStyle = {
