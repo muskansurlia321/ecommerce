@@ -100,7 +100,7 @@
 
 
 import React, { useEffect, useState, useContext } from 'react';
-import ProductCard from '../components/ProductCard';
+// import ProductCard from '../components/ProductCard';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
 import { apiFetch } from '../api';
