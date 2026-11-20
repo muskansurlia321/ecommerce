@@ -1,4 +1,6 @@
 import React from 'react';
+import { apiFetch } from '../api';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { removeFromCart, addToCart } from '../redux/cartSlice';

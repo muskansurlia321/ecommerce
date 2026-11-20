@@ -1,4 +1,5 @@
 import React from 'react';
+import { apiFetch } from '../api';
 
 const About = () => {
   const containerStyle = {
@@ -26,7 +27,7 @@ const About = () => {
 
   return (
     <div style={containerStyle}>
-       <a href="" target="_blank" rel="noreferrer" style={socialBtnStyle}>Will Do it Soon !</a>
+      <h1>Will Do It Soon !</h1>
       </div>
     
   );
