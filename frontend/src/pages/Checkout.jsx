@@ -92,7 +92,7 @@ const Checkout = () => {
   };
 
   const bypassPayment = async () => {
-    const saveOrderRes = await apiFtch('/api/orders', {
+    const saveOrderRes = await apiFetch('/api/orders', {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',

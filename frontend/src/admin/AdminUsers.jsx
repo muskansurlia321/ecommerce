@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
-import { apiFetch } from '../../api';
+import { apiFetch } from '../api';
 
 const AdminUsers = () => {
   const { user } = useContext(AuthContext);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { useParams, useNavigate } from 'react-router-dom';
-import { apiFetch } from '../../api';
+import { apiFetch } from '../api';
 
 const EditProduct = () => {
   const { id } = useParams();
@@ -32,7 +32,7 @@ const EditProduct = () => {
     data.append('stock', formData.stock);
     if (image) data.append('image', image);
 
-    const res = await fetch(`/api/products/${id}`, {
+    const res = await apiFetch(`/api/products/${id}`, {
       method: 'PUT',
       headers: { Authorization: `Bearer ${user.token}` },
       body: data
